@@ -234,7 +234,7 @@
         <div class = "container fluid">
             <div class = "d-lg-flex align-items-center justify-content-between">
 
-                <img class="img-fluid px-5" src="./pictures/mapPic.png" alt="" />
+                <img class="img-fluid px-5" src="./pictures/mapMBTAbus.png" alt="" />
                 <div>
                     <h2>
                         <span 
@@ -243,8 +243,11 @@
                         </span> 
                     </h2>
                     <p class="lead my-4">
-                        This real time bus tracker collects live GPS location data on Boston's public bus system using an API from the MBTA. The script asks for the bus locations on the first bus route every 15 seconds and maps the coordinates accordingly using mapbox. After 14 seconds of the markers being displayed on the map, a 1 second removal of the markers shows new data is about to come in. This program demonstrates the use of asynchronous and recurring functions to properly collect, analyze, and display data.
+                        This real time bus tracker collects live GPS location data on Boston's public bus system using an API from the MBTA. The script asks for the bus locations on the first bus route every 15 seconds and maps the coordinates accordingly using mapbox. After 14 seconds of the markers being displayed on the map, a 1 second removal of the markers shows new data is about to come in. If the operator desires, a popup at each location is created and displayed by clicking on the bus' marker. 
                     </p> 
+                    <p class="lead">
+                        This program demonstrates the use of asynchronous and recurring functions to properly collect, analyze, and display data.
+                    </p>
                     <a href="https://github.com/adamchory/busTracker.git" class="btn btn-lg btn-dark"><span 
                         class="text-success">
                         Link to GitHub Repository
@@ -269,3 +272,4 @@
     </script>
 </body>
 </html>
+
