@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <!--NAVBAR BRAND W/ LOGO-->
             <a class="navbar-brand" href="#">
-                <img src = "acLogo.svg" 
+                <img src = "./pictures/acLogo.svg" 
                     alt = "Adam Chory's Website" 
                     width = "30" 
                     height = "30"
@@ -45,9 +45,8 @@
                     <!--text-center ms-auto-->
                     <!--BIO-->
                     <li class = "nav-item">
-                        <a  href = #bio 
-                            class = "nav-link active"
-                            aria-current = "page">
+                        <a  href = "https://github.com/adamchory/myWebsite.git"
+                            class = "nav-link">
                             Bio
                         </a>
                     </li>
@@ -155,6 +154,114 @@
         <!--END OF CONTAINER-->
     </nav>
     <!--END OF NAVBAR SECTION-->
+
+    <!--HOME PAGE SHOWCASE-->
+
+    <!--INTRO TITLE BLOCK-->
+    <section class="bg-dark text-light p-2 text-center">
+        <div class = "container fluid">
+            <div class = "d-lg-flex align-items-center">
+                <img class="img-fluid px-5" src="./pictures/softwareIcon.png" alt="" />
+                <div>
+                    <h1>
+                        <span class="text-success">
+                                Welcome</span> to my software projects page
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END INTRO TITLE BLOCK-->
+    
+    <section class="bg-success text-light p-5 text-center">
+        <div class = "container fluid">
+            <div class = "d-lg-flex align-items-center justify-content-between">
+
+                <img class="img-fluid px-5" src="./pictures/pacmanPic.png" alt="" />
+                <div>
+                    <h2>
+                        <span 
+                            class="text-dark">
+                            PACMEN EXERCISE
+                        </span> 
+                    </h2>
+                    <p class="lead my-4">
+                        This application could potentially simulate infinite PacMen characters chomping their way up and down the window before turning around at the x-limit of the browser. 
+                    </p> 
+                    <p class="lead">
+                        Upon request, this application will add a new PacMan and store the positon, velocity, direction, and focus data to the end of an array that stores all the PacMen's data. The main function of pacmen.js is a timed recurring function that translates the PacMen's position, checks each PacMan for a collision with the window, adjusts the stored data accordingly for each PacMan, and determines what PacMan image to display to show animation. This is then mirrored on the DOM.
+                    </p>
+                    <a href="https://github.com/adamchory/pacman.git" class="btn btn-lg btn-dark"><span 
+                        class="text-success">
+                        Link to GitHub Repository
+                    </span> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-light p-5 text-center">
+        <div class = "container fluid">
+            <div class = "d-lg-flex align-items-center justify-content-between">
+                <div>
+                    <h2>
+                        <span 
+                            class="text-success">
+                            EYE EXERCISE
+                        </span> 
+                    </h2>
+                    <p class="lead my-4">
+                        This exercise has two eyes that follow the users mouse as it moves along the browser. 
+                    </p>
+                    <p class="lead">
+                        This exercise demonstrates the ability to manipulate styles and positions based on live data in the browser, incorporating JavaScript, html, and css. An improvement to the two eye'd exercise would be writing a script to continually add eyes in random positions of the browser as the previous one disappears.
+
+ 
+                    </p> 
+                    <a href="https://github.com/adamchory/eyes.git" class="btn btn-lg btn-success"><span 
+                        class="text-dark">
+                        Link to GitHub Repository
+                    </span> 
+                    </a>
+                </div>
+                <img class="img-fluid px-5" src="./pictures/eyesPic.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-success text-light p-5 text-center">
+        <div class = "container fluid">
+            <div class = "d-lg-flex align-items-center justify-content-between">
+
+                <img class="img-fluid px-5" src="./pictures/mapPic.png" alt="" />
+                <div>
+                    <h2>
+                        <span 
+                            class="text-dark">
+                            REAL TIME BUS TRACKER
+                        </span> 
+                    </h2>
+                    <p class="lead my-4">
+                        This real time bus tracker collects live GPS location data on Boston's public bus system using an API from the MBTA. The script asks for the bus locations on the first bus route every 15 seconds and maps the coordinates accordingly using mapbox. After 14 seconds of the markers being displayed on the map, a 1 second removal of the markers shows new data is about to come in. This program demonstrates the use of asynchronous and recurring functions to properly collect, analyze, and display data.
+                    </p> 
+                    <a href="https://github.com/adamchory/busTracker.git" class="btn btn-lg btn-dark"><span 
+                        class="text-success">
+                        Link to GitHub Repository
+                    </span> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-light p-5">
+        <div class="row text-mute text-center">
+            <p class="fst-italic fw-lighter">
+                All files have been updated by Adam Chory. For questions, please email adam.chory96@gmail.com
+            </p>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
